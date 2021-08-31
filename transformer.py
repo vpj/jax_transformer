@@ -43,7 +43,7 @@ across the batch dimension (or any other dimension if needed).
 * [Experiment code](#Experiment)
 
 [![View Run](https://img.shields.io/badge/labml-experiment-brightgreen)](https://app.labml.ai/run/1d9b87580a1a11eca4b521ac4d5cf934)
-"""
+[![Twitter thread](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Flabmlai%2Fstatus%2F1432586070986690560)](https://twitter.com/labmlai/status/1432586070986690560)"""
 
 from functools import partial
 from typing import Dict, NamedTuple, Tuple, Any, Callable
