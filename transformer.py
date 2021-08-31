@@ -555,7 +555,7 @@ class MultiHeadAttention(Module):
 
         # Compute attention scores $Q K^\top$.
         # This gives a tensor of shape `[seq_len, seq_len, heads]`.
-        # $$Q K^\top$ or $S_{ijh} = \sum_d Q_{ihd} K_{jhd}$$
+        # $$$S_{ijh} = \sum_d Q_{ihd} K_{jhd}$$
         scores = jnp.einsum('ihd,jhd->ijh', query, key)
 
         # Scale scores $\frac{Q K^\top}{\sqrt{d_k}}$
