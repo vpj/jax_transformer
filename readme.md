@@ -21,7 +21,7 @@ across the batch dimension (or any other dimension if needed).
 ### Contents
 
 * [Module class to help us write the layers](https://lit.labml.ai/github/vpj/jax_transformer/blob/master/transformer.py#Module)
-* [Embedding layer]https://lit.labml.ai/github/vpj/jax_transformer/blob/master/transformer.py#Embedding)
+* [Embedding layer](https://lit.labml.ai/github/vpj/jax_transformer/blob/master/transformer.py#Embedding)
 * [Positional embeddings](https://lit.labml.ai/github/vpj/jax_transformer/blob/master/transformer.py#PositionalEmbedding)
 * [Linear layer](https://lit.labml.ai/github/vpj/jax_transformer/blob/master/transformer.py#Linear)
 * [Layer Normalization](https://lit.labml.ai/github/vpj/jax_transformer/blob/master/transformer.py#LayerNormalization)
