@@ -797,6 +797,7 @@ class Adam:
      [Adam: A Method for Stochastic Optimization](https://papers.labml.ai/paper/1412.6980).
 
     For parameter $\theta_t$ and gradient $g_t$ at step $t$, the Adam update is,
+
     \begin{align}
     m_t &\leftarrow \beta_1 m_{t-1} + (1 - \beta_1) \cdot g_t \\
     v_t &\leftarrow \beta_2 v_{t-1} + (1 - \beta_2) \cdot g_t^2 \\
@@ -804,6 +805,7 @@ class Adam:
     \hat{v}_t &\leftarrow \frac{v_t}{1-\beta_2^t} \\
     \theta_t &\leftarrow \theta_{t-1} - \alpha \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}
     \end{align}
+    
     where $\alpha$, $\beta_1$, $\beta_2$ and $\epsilon$ are scalar hyper parameters.
     $m_t$ and $v_t$ are first and second order moments.
     $\hat{m}_t$  and $\hat{v}_t$ are biased corrected moments.
