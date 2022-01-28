@@ -61,6 +61,7 @@ from labml.utils.download import download_file
 class Module:
     """
     <a id="Module"></a>
+
     ## Module
 
     This is a base class for all modules.
@@ -290,6 +291,7 @@ class ModuleList(Module, Generic[M]):
 class Embedding(Module):
     """
     <a id="Embedding"></a>
+
     ## Embedding layer
 
     This maintains embeddings by id.
@@ -315,6 +317,7 @@ class Embedding(Module):
 class EmbeddingsWithLearnedPositionalEncoding(Module):
     """
     <a id="PositionalEmbedding"></a>
+
     ## Embed tokens and add parameterized positional encodings
 
     This is based on
@@ -346,6 +349,7 @@ class EmbeddingsWithLearnedPositionalEncoding(Module):
 class Linear(Module):
     """
     <a id="Linear"></a>
+
     ## Linear Layer
 
     This is a simple linear layer with a weight matrix and a bias vector
@@ -374,6 +378,7 @@ class Linear(Module):
 class LayerNorm(Module):
     r"""
     <a id="LayerNormalization"></a>
+
     ## Layer Normalization
 
     This implements the the layer normalization from the paper
@@ -438,7 +443,9 @@ class LayerNorm(Module):
 class PrepareForMultiHeadAttention(Module):
     """
     <a id="PrepareMHA"></a>
+
     ## Prepare for multi-head attention
+
     This module does a linear transformation and splits the vector into given
     number of heads for multi-head attention.
     This is used to transform **key**, **query**, and **value** vectors.
@@ -473,6 +480,7 @@ class PrepareForMultiHeadAttention(Module):
 class MultiHeadAttention(Module):
     r"""
     <a id="MHA"></a>
+
     ## Multi-Head Attention Module
 
     This computes scaled multi-headed attention from
@@ -583,6 +591,7 @@ class MultiHeadAttention(Module):
 class FeedForward(Module):
     """
     <a id="FFN"></a>
+
     ## Position-wise Feed-Forward layer
 
     This is based on
@@ -618,6 +627,7 @@ class FeedForward(Module):
 class TransformerLayer(Module):
     """
     <a id="TransformerLayer"></a>
+
     ## Transformer Layer
 
     This is a transformer layer with multi-head attention and a position-wise feed-forward layer.
@@ -660,6 +670,7 @@ class TransformerLayer(Module):
 class CrossEntropyLoss(Module):
     """
     <a id="CrossEntropyLoss"></a>
+
     ## Cross Entropy Loss
     """
 
@@ -688,6 +699,7 @@ class CrossEntropyLoss(Module):
 class AutoregressiveTransformer(Module):
     """
     <a id="AutoregressiveTransformer"></a>
+
     ## Autoregressive Transformer
 
     This is the transformer decode with embedding and output layers.
@@ -778,6 +790,7 @@ class AdamState(NamedTuple):
 class Adam:
     """
     <a id="Adam"></a>
+
     ## Adam Optimizer
 
     This is from paper
@@ -885,6 +898,7 @@ class Adam:
 class TinyShakespeare:
     """
     <a id="Dataset"></a>
+
     ## Tiny Shakespeare dataset
     """
 
@@ -972,6 +986,7 @@ class TinyShakespeare:
 def main():
     """
     <a id="Experiment"></a>
+    
     ## Run the experiment
     """
 
