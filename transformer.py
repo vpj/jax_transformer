@@ -882,7 +882,7 @@ class Adam:
 
         This updates uncorrected first and second moments $m_t$ and $v_t$
         """
-        # Uncorrected first and second moments $m_{t-1)$ and $v_{t-1}$
+        # Uncorrected first and second moments $m_{t-1}$ and $v_{t-1}$
         m, v = state
         # Clip gradients
         grad = jnp.clip(grad, -1, 1)
@@ -986,7 +986,7 @@ class TinyShakespeare:
 def main():
     """
     <a id="Experiment"></a>
-    
+
     ## Run the experiment
     """
 
